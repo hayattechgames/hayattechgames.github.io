@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Hayat Tech Games</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent-color: #38bdf8;
+      --accent-hover: #0284c7;
+      --border-color: #334155;
+      --warning-bg: #451a03;
+      --warning-border: #9a3412;
+      --warning-text: #ffedd5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding-bottom: 4rem;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    nav a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    nav a span {
+      color: var(--accent-color);
+    }
+
+    nav a:last-child {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+    }
+
+    nav a:last-child:hover {
+      color: var(--accent-color);
+    }
+
+    header {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    header .sub-title {
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 em {
+      font-style: normal;
+      color: var(--accent-color);
+    }
+
+    header .meta-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    header .meta-grid span {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .alert-banner {
+      background-color: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      color: var(--warning-text);
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+
+    .alert-banner span {
+      font-weight: 700;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.75rem;
+    }
+
+    .card h2 span {
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card strong {
+      color: var(--text-primary);
+    }
+
+    .card ul {
+      margin: 1rem 0 1rem 1.5rem;
+      color: var(--text-secondary);
+    }
+
+    .card ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin: 1.25rem 0;
+    }
+
+    .link-grid a {
+      background: var(--bg-color);
+      color: var(--accent-color);
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid var(--border-color);
+      transition: all 0.2s;
+      display: block;
+      text-align: center;
+    }
+
+    .link-grid a:hover {
+      border-color: var(--accent-color);
+      background: rgba(56, 189, 248, 0.05);
+    }
+
+    .contact-box {
+      margin-top: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg-color);
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+
+    .contact-box a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      max-width: 900px;
+      margin: 4rem auto 0;
+      padding: 2rem 1rem 0;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+    }
+
+    footer div:first-child {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    footer div:first-child span {
+      color: var(--accent-color);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header .meta-grid {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">HAYAT TECH <span>#</span>GAMES</a>
+    <a href="index.html">Back to Home</a>
+  </nav>
+
+  <header>
+    <div class="sub-title">Legal</div>
+    <h1>Privacy <em>Policy</em></h1>
+    <div class="meta-grid">
+      <div>Applies to: <span>All Hayat Tech Games Apps</span></div>
+      <div>Effective: <span>[Insert Date]</span></div>
+      <div>Provider: <span>Hayat Tech Games</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="alert-banner">
+      ⚠ &nbsp; Effective as of <span>[Insert Date]</span>. Continued use of any Hayat Tech Games application constitutes acceptance of this policy.
+    </div>
+
+    <div class="card">
+      <h2><span>📋</span> Overview</h2>
+      <div>
+        <p>This privacy policy applies to all mobile applications (hereby referred to as &quot;Applications&quot;) developed and published by <strong>Hayat Tech Games</strong> (hereby referred to as &quot;Service Provider&quot;). This includes all current and future titles released by Hayat Tech Games on any mobile platform.</p>
+        <p>All Applications are provided as free services and are intended for use <strong>&quot;AS IS&quot;</strong>. By downloading or using any Application developed by Hayat Tech Games, you agree to the terms outlined in this privacy policy.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span>📡</span> Information Collection and Use</h2>
+      <div>
+        <p>The Application collects information when you download and use it. This information may include:</p>
+        <ul>
+          <li>Your device&#39;s Internet Protocol address (e.g. IP address)</li>
+          <li>The pages of the Application that you visit, the time and date of your visit, and time spent on those pages</li>
+          <li>Total time spent on the Application</li>
+          <li>The operating system you use on your mobile device</li>
+        </ul>
+        <p>The Application does not gather <strong>precise information</strong> about the location of your mobile device. However, it does collect approximate geographical location data, used in the following ways:</p>
+        <ul>
+          <li><strong>Geolocation Services:</strong> To provide personalized content, relevant recommendations, and location-based features.</li>
+          <li><strong>Analytics and Improvements:</strong> Aggregated and anonymized location data helps analyze user behavior, identify trends, and improve overall performance.</li>
+          <li><strong>Third-Party Services:</strong> Anonymized location data may periodically be shared with external services to enhance and optimize the Applications.</li>
+        </ul>
+        <p>The Service Provider may use your information to contact you with important notices, updates, and marketing promotions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span>🔗</span> Third Party Access</h2>
+      <div>
+        <p>Only aggregated, anonymized data is periodically shared with external services. The Applications use the following third-party services, each governed by their own privacy policies:</p>
+        <div class="link-grid">
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services</a>
+          <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob</a>
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a>
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a>
+          <a href="https://www.facebook.com/about/privacy" target="_blank" rel="noopener noreferrer">Facebook Audience Network</a>
+          <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Ads</a>
+          <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">AppLovin</a>
+          <a href="https://bytebrew.io/privacy-policy" target="_blank" rel="noopener noreferrer">ByteBrew</a>
+          <a href="https://www.mintegral.com/en/privacy" target="_blank" rel="noopener noreferrer">Mintegral</a>
+          <a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener noreferrer">Yandex</a>
+        </div>
+        <p>The Service Provider may integrate additional advertising networks or analytics services in future updates. This policy will be updated accordingly, and each provider&#39;s own privacy policy will govern their data handling.</p>
+        <p>The Service Provider may disclose collected information:</p>
+        <ul>
+          <li>As required by law, such as to comply with a subpoena or similar legal process</li>
+          <li>When disclosure is necessary to protect rights, safety, investigate fraud, or respond to a government request</li>
+          <li>With trusted service providers acting on behalf of the Service Provider, who are bound to adhere to this privacy statement</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span>🚪</span> Opt-Out Rights</h2>
+      <div>
+        <p>You can stop all collection of information by uninstalling the Application at any time. Use the standard uninstall process available on your mobile device or via the application marketplace.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span>🗄️</span> Data Retention Policy</h2>
+      <div>
+        <p>User Provided data will be retained for as long as you use the Application and for a reasonable period thereafter. To request deletion of your data, please contact us:</p>
+        <div class="contact-box">
+          <span>✉️</span>
+          <a href="mailto:[Insert Email Address]">[Insert Email Address]</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span>🧒</span> Children</h2>
+      <div>
+        <p>Hayat Tech Games does not knowingly solicit data from or market to children under the age of <strong>13</strong>. The Applications do not address anyone under 13. If it is discovered that a child under 13 has provided personal information, it will be immediately deleted from servers.</p>
+        <p>If you are a parent or guardian and believe your child has provided personal information, please contact us immediately so the necessary actions can be taken.</p>
+        <div class="contact-box">
+          <span>🛡️</span>
+          <a href="mailto:[Insert Email Address]">[Insert Email Address]</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span>🔒</span> Security</h2>
+      <div>
+        <p>Hayat Tech Games is committed to safeguarding the confidentiality of your information. Physical, electronic, and procedural safeguards are maintained to protect all information that is processed and retained.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span>🔄</span> Changes to This Policy</h2>
+      <div>
+        <p>This Privacy Policy may be updated at any time. Any changes will be reflected on this page with an updated effective date. You are advised to review this policy periodically. Continued use of any Application is considered acceptance of the updated policy.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span>✅</span> Your Consent</h2>
+      <div>
+        <p>By using any Application developed by Hayat Tech Games, you consent to the processing of your information as described in this Privacy Policy, including any future amendments.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span>📩</span> Contact Us</h2>
+      <div>
+        <p>If you have any questions or concerns regarding this Privacy Policy or our data practices, please reach out directly:</p>
+        <div class="contact-box">
+          <span>📡</span>
+          <a href="mailto:[Insert Email Address]">[Insert Email Address]</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>HAYAT TECH <span>#</span>GAMES</div>
+    <div>© 2026 Hayat Tech Games. All rights reserved. · Effective: [Insert Date]</div>
+  </footer>
+
+</body>
+</html>
